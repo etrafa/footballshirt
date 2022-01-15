@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/footballshirt/static/css/main.8a693b15.css",
+    "main.js": "/footballshirt/static/js/main.327a5615.js",
+    "static/media/mancity.png": "/footballshirt/static/media/mancity.fd1bfd55d15ac91ef3f8.png",
+    "static/media/arsenal.png": "/footballshirt/static/media/arsenal.bef5fb1857eee5ad55f0.png",
+    "static/media/manunited.png": "/footballshirt/static/media/manunited.b13670b3a8720c3f9ca5.png",
+    "static/media/liverpool.png": "/footballshirt/static/media/liverpool.16fa70b01bb095a96f48.png",
+    "index.html": "/footballshirt/index.html",
+    "main.8a693b15.css.map": "/footballshirt/static/css/main.8a693b15.css.map",
+    "main.327a5615.js.map": "/footballshirt/static/js/main.327a5615.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a693b15.css",
+    "static/js/main.327a5615.js"
+  ]
+}
