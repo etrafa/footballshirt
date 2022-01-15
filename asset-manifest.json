@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/footballshirt/static/css/main.8a693b15.css",
-    "main.js": "/footballshirt/static/js/main.327a5615.js",
+    "main.css": "/footballshirt/static/css/main.8da54e36.css",
+    "main.js": "/footballshirt/static/js/main.2a422067.js",
+    "static/media/mancity-front.png": "/footballshirt/static/media/mancity-front.2b688f7246c44b05c995.png",
+    "static/media/mancity-back.png": "/footballshirt/static/media/mancity-back.e6ce7d8ad578dffbb14c.png",
+    "static/media/manunited-front.png": "/footballshirt/static/media/manunited-front.53f9d4374b4cf24d2be9.png",
+    "static/media/liverpool-front.png": "/footballshirt/static/media/liverpool-front.ec9c6fc64032f6afb2bf.png",
+    "static/media/arsenal-front.png": "/footballshirt/static/media/arsenal-front.e367bce0ff51966322a0.png",
+    "static/media/manunited-back.png": "/footballshirt/static/media/manunited-back.122a9c01ae88ba9a47ab.png",
     "static/media/mancity.png": "/footballshirt/static/media/mancity.fd1bfd55d15ac91ef3f8.png",
+    "static/media/arsenal-back.png": "/footballshirt/static/media/arsenal-back.c1702702abbf307ea24d.png",
+    "static/media/liverpool-back.png": "/footballshirt/static/media/liverpool-back.2441c71fd2b04a5793b5.png",
     "static/media/arsenal.png": "/footballshirt/static/media/arsenal.bef5fb1857eee5ad55f0.png",
     "static/media/manunited.png": "/footballshirt/static/media/manunited.b13670b3a8720c3f9ca5.png",
     "static/media/liverpool.png": "/footballshirt/static/media/liverpool.16fa70b01bb095a96f48.png",
+    "static/media/mancity-front-small.png": "/footballshirt/static/media/mancity-front-small.275b852386d0090a0d65.png",
+    "static/media/mancity-back-small.png": "/footballshirt/static/media/mancity-back-small.b569c00808a53a41c327.png",
     "index.html": "/footballshirt/index.html",
-    "main.8a693b15.css.map": "/footballshirt/static/css/main.8a693b15.css.map",
-    "main.327a5615.js.map": "/footballshirt/static/js/main.327a5615.js.map"
+    "main.8da54e36.css.map": "/footballshirt/static/css/main.8da54e36.css.map",
+    "main.2a422067.js.map": "/footballshirt/static/js/main.2a422067.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a693b15.css",
-    "static/js/main.327a5615.js"
+    "static/css/main.8da54e36.css",
+    "static/js/main.2a422067.js"
   ]
 }
