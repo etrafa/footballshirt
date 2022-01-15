@@ -6,6 +6,8 @@
 .sales__container img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .sales__container a {
@@ -17,6 +19,11 @@
 .best__seller__price {
   color: #941313;
   font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.bestseller-price-container {
   text-align: center;
 }
 
