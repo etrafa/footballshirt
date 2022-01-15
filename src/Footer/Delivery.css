@@ -1,0 +1,19 @@
+.delivery__container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.delivery__text {
+  border: 1px dotted #444444;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.delivery__text p {
+  padding: 20px;
+  font-size: 16px;
+}

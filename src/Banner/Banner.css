@@ -1,0 +1,24 @@
+.banner__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.banner__container img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem auto 0;
+}
+
+.banner__container img:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 892px) {
+  .banner__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .banner__container {
+    padding: 0 5rem;
+  }
+}

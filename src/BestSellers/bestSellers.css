@@ -1,0 +1,33 @@
+.sales__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sales__container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sales__container a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.best__seller__price {
+  color: #941313;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 892px) {
+  .sales__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sales__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
