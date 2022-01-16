@@ -1,15 +1,28 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
 import arsenalFront from "./arsenal-asset/arsenal-front.png";
 import arsenalBack from "./arsenal-asset/arsenal-back.png";
 import arsenalFrontSmall from "./arsenal-asset/arsenal-front-small.png";
 import arsenalBackSmall from "./arsenal-asset/arsenal-back-small.png";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./ShirtSales.css";
 
 const ArsenalSales = () => {
   const [image, setImage] = useState(arsenalFront);
+  const [cartText, setCartText] = useState("Add to Cart");
+  const [wishColor, setWishColor] = useState(true);
+  const [tshirtSize, setTshirtSize] = useState(" ");
+  const [tshirtName, setTshirtName] = useState("");
+  const [tshirtNumber, setTshirtNumber] = useState("");
+  const handleWishColor = () => {
+    setWishColor(!wishColor);
+  };
+
+  const addCartHandler = (e) => {
+    setCartText("Added ✓");
+    e.preventDefault();
+    console.log(tshirtSize, tshirtName, tshirtNumber);
+  };
 
   return (
     <div className="shirtSales__container">
@@ -59,43 +72,73 @@ const ArsenalSales = () => {
           </li>
         </ul>
       </div>
-      <div className="tshirtSales__additional__parts">
-        <div className="tshirt__size">
-          <label htmlFor="size">
-            <span>*</span>Size
-          </label>
-          <select name="size" id="size">
-            <option value="#" selected disabled>
-              -- Please Select --
-            </option>
-            <option value="small">S</option>
-            <option value="medium">M</option>
-            <option value="large">L</option>
-            <option value="xLarge">XL</option>
-            <option value="2xLarge">2XL</option>
-          </select>
+      <form>
+        <div className="tshirtSales__additional__parts">
+          <div className="tshirt__size">
+            <label htmlFor="size">
+              <span>*</span>Size
+            </label>
+            <select
+              onChange={(e) => {
+                setTshirtSize(e.target.value);
+              }}
+              value={tshirtSize}
+              name="size"
+              id="size"
+            >
+              <option value="#" selected>
+                -- Please Select --
+              </option>
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+              <option value="xLarge">XL</option>
+              <option value="2xLarge">2XL</option>
+            </select>
+          </div>
+          <div className="tshirt__name">
+            <label htmlFor="name">
+              Name<span> +$3.00</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={tshirtName}
+              onChange={(e) => setTshirtName(e.target.value)}
+              id="name"
+            />
+          </div>
+          <div className="tshirt__number">
+            <label htmlFor="name">
+              Number <span>+$3.00</span>
+            </label>
+            <input
+              type="text"
+              name="number"
+              value={tshirtNumber}
+              onChange={(e) => setTshirtNumber(e.target.value)}
+              id="number"
+            />
+          </div>
+          <p>* Required Fields</p>
         </div>
-        <div className="tshirt__name">
-          <label htmlFor="name">
-            Name<span> +$3.00</span>
-          </label>
-          <input type="text" name="name" id="name" />
+        <div className="heart__icon">
+          <div className="add__to__wishlist">
+            <span
+              className={
+                wishColor ? "add__to__wishlist-color" : "add__to__wishlist-red"
+              }
+              onClick={handleWishColor}
+            >
+              <FontAwesomeIcon icon={faHeart} />
+            </span>
+            <h4 onClick={handleWishColor}>Add To Wishlist</h4>
+          </div>
+          <button type="submit" onClick={addCartHandler}>
+            {cartText}
+          </button>
         </div>
-        <div className="tshirt__number">
-          <label htmlFor="name">
-            Number <span>+$3.00</span>
-          </label>
-          <input type="text" name="number" id="number" />
-        </div>
-        <p>* Required Fields</p>
-      </div>
-      <button>Add to Cart</button>
-      <div className="heart__icon">
-        <span>
-          <FontAwesomeIcon icon={faHeart} />
-        </span>
-        <h4>ADD TO WISHLIST</h4>
-      </div>
+      </form>
       <div className="thirt__description">
         <h1>DESCRIPTION</h1>
         <hr />

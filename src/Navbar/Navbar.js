@@ -92,10 +92,9 @@ const Navbar = () => {
         <p>Your cart is empty!</p>
       </div>
       <div className="logo">
-        {/* <Link>
-          {"/footballshirt"} */}
-        <img src={logo} alt="logo" />
-        {/* </Link> */}
+        <Link to={"/footballshirt"}>
+          <img src={logo} alt="" />
+        </Link>
       </div>
     </>
   );

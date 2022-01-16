@@ -3,7 +3,7 @@ import "./FooterItems.css";
 const Terms = () => {
   return (
     <div className="terms__container">
-      <h1>PRIVACY POLICY</h1>
+      <h1>TERMS OF USE</h1>
       <div className="terms__text">
         <p>
           1. Lorem ipsum dolor sit amet consectetur adipisicing elit.

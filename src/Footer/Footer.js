@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+import "./Footer.css";
 import visa from "./footer-asset/visa.png";
 import masterCard from "./footer-asset/mastercard.png";
-import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -11,32 +12,60 @@ const Footer = () => {
             <h3>COMPANY INFO</h3>
             <hr />
             <ul>
-              <li>About Us</li>
-              <li>Delivery Guarantee</li>
-              <li>Privacy Policy</li>
-              <li>Terms of Use </li>
+              <li>
+                <Link to={"/about-us"}>About Us</Link>
+              </li>
+              <li>
+                <Link to={"/delivery-guarantee"}>Delivery Guarantee</Link>
+              </li>
+              <li>
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to={"/terms-of-use"}>Terms of Use</Link>
+              </li>
             </ul>
           </div>
           <div className="customer__service">
             <h3>CUSTOMER SERVICE</h3>
             <hr />
             <ul>
-              <li>Size Chart</li>
-              <li>FAQ & Help</li>
-              <li>Shipping & Delivery</li>
-              <li>Return Policy</li>
-              <li>Payment Method</li>
+              <li>
+                <Link to={"/size-chart"}>Size Chart</Link>
+              </li>
+              <li>
+                <Link to={"/faq-help"}>FAQ & Help</Link>
+              </li>
+              <li>
+                <Link to={"/shipping-delivery"}>Shipping & Delivery</Link>
+              </li>
+              <li>
+                <Link to={"/return-policy"}>Return Policy</Link>
+              </li>
+              <li>
+                <Link to={"/payment-method"}>Payment Method</Link>
+              </li>
             </ul>
           </div>
           <div className="my__account">
             <h3>MY ACCCOUNT</h3>
             <hr />
             <ul>
-              <li>LOG IN</li>
-              <li>SIGN UP</li>
-              <li>My Account</li>
-              <li>My Orders</li>
-              <li>Forgot Password</li>
+              <li>
+                <Link to={"/login"}>LOG IN</Link>
+              </li>
+              <li>
+                <Link to={"/create-account"}>SIGN UP</Link>
+              </li>
+              <li>
+                <Link to={"/my-account"}>My Account</Link>
+              </li>
+              <li>
+                <Link to={"/my-orders"}>My Orders</Link>
+              </li>
+              <li>
+                <Link to={"/forgot-password"}>Forgot Password</Link>
+              </li>
             </ul>
           </div>
           <div className="contact__us">

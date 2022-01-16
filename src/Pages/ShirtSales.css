@@ -67,15 +67,20 @@
   margin-top: 1rem;
 }
 
-.size__chart a:first-child {
+/* .size__chart p:first-child {
   color: #ff0000;
   font-size: 1.1em;
   text-decoration: underline;
 }
 
-.size__chart a:last-child {
+.size__chart p:last-child {
   color: #000;
   font-size: 1.1em;
+} */
+
+.size__chart a:last-child {
+  color: #ff0000 !important;
+  font-weight: 600;
 }
 
 .size__chart__hr {
@@ -168,6 +173,7 @@
   font-size: 16px;
   text-align: center;
   margin: 2rem 1rem;
+  cursor: pointer;
 }
 
 .thirt__description {
