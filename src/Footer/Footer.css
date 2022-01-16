@@ -42,7 +42,14 @@
 
 .footer__lists a {
   font-size: 14px;
+  text-decoration: none;
+  color: #ccc;
 }
+
+.footer__lists a:hover {
+  color: #fea500;
+}
+
 .gmail__hr {
   margin-top: 4rem;
   padding: 1px;

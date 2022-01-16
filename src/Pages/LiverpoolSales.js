@@ -8,11 +8,12 @@ import liverpoolBack from "./liverpool-asset/liverpool-back.png";
 import liverpoolFrontSmall from "./liverpool-asset/liverpool-front-small.png";
 import liverpoolBackSmall from "./liverpool-asset/liverpool-back-small.png";
 
-const LiverpoolSales = () => {
+const LiverpoolSales = (props) => {
+  const { cartItems } = props;
   const [image, setImage] = useState(liverpoolFront);
   const [cartText, setCartText] = useState("Add to Cart");
   const [wishColor, setWishColor] = useState(true);
-  const [tshirtSize, setTshirtSize] = useState(" ");
+  const [tshirtSize, setTshirtSize] = useState("notSelected");
   const [tshirtName, setTshirtName] = useState("");
   const [tshirtNumber, setTshirtNumber] = useState("");
   const handleWishColor = () => {
@@ -20,9 +21,9 @@ const LiverpoolSales = () => {
   };
 
   const addCartHandler = (e) => {
-    setCartText("Added ✓");
     e.preventDefault();
-    console.log(tshirtSize, tshirtName, tshirtNumber);
+    console.log(tshirtSize);
+    if (tshirtSize === "notSelected") alert("Please select your size.");
   };
 
   return (
@@ -87,7 +88,7 @@ const LiverpoolSales = () => {
               name="size"
               id="size"
             >
-              <option value="#" selected>
+              <option value="notSelected" defaultChecked>
                 -- Please Select --
               </option>
               <option value="small">S</option>

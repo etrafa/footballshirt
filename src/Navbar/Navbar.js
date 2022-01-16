@@ -14,6 +14,7 @@ const Navbar = () => {
   const [cartItem, setCartItem] = useState(0);
   const [searchBar, setSearchBar] = useState(false);
   const [shoppingCartActive, setShoppingCartActive] = useState(false);
+  const [cartMessage, setCartMessage] = useState("Your cart is empty.");
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -89,7 +90,7 @@ const Navbar = () => {
             : "shoppingCart__modal-deactive"
         }
       >
-        <p>Your cart is empty!</p>
+        <p>{cartMessage}</p>
       </div>
       <div className="logo">
         <Link to={"/footballshirt"}>
