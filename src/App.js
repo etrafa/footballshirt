@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { useState } from "react";
 import "./index.css";
 import ScrollTop from "./ScrollToTop";
 import Navbar from "./Navbar/Navbar";
@@ -35,7 +36,6 @@ function App() {
           <Route path="/mancity-sales" element={<ManCitySales />} />
           <Route path="/manunited-sales" element={<ManUnitedSales />} />
           <Route path="/arsenal-sales" element={<ArsenalSales />} />
-
           {/* FOOTER */}
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/delivery-guarantee" element={<DeliveryGuarantee />} />

@@ -67,19 +67,8 @@
   margin-top: 1rem;
 }
 
-/* .size__chart p:first-child {
-  color: #ff0000;
-  font-size: 1.1em;
-  text-decoration: underline;
-}
-
-.size__chart p:last-child {
-  color: #000;
-  font-size: 1.1em;
-} */
-
 .size__chart a:last-child {
-  color: #ff0000 !important;
+  color: #ff0000;
   font-weight: 600;
 }
 

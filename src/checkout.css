@@ -1,0 +1,56 @@
+.checkout {
+  color: #4b4b4b;
+  margin-top: 5rem;
+  text-align: center;
+  background: #d6d6d6;
+  padding-bottom: 1rem;
+  display: block;
+}
+
+.checkout button {
+  width: 120px;
+  height: 40px;
+  margin-top: 2rem;
+  background-color: #2c9bf3;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin: 2rem auto;
+}
+
+.checkout label {
+  display: block;
+  margin-top: 2rem;
+}
+
+.checkout h2 {
+  padding-top: 2rem;
+}
+
+.checkout input,
+.checkout-country select {
+  width: 240px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+
+.expiration-date-container select {
+  width: 140px;
+  height: 35px;
+}
+
+.expiration-date-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.checkout-active {
+  display: none;
+}
