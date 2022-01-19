@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/footballshirt/static/css/main.b0335b06.css",
-    "main.js": "/footballshirt/static/js/main.2d3a72a9.js",
+    "main.css": "/footballshirt/static/css/main.49b1fa56.css",
+    "main.js": "/footballshirt/static/js/main.d7eefda9.js",
     "static/media/mancity-front.png": "/footballshirt/static/media/mancity-front.2b688f7246c44b05c995.png",
     "static/media/mancity-back.png": "/footballshirt/static/media/mancity-back.e6ce7d8ad578dffbb14c.png",
     "static/media/manunited-front.png": "/footballshirt/static/media/manunited-front.53f9d4374b4cf24d2be9.png",
@@ -18,11 +18,11 @@
     "static/media/mancity-front-small.png": "/footballshirt/static/media/mancity-front-small.275b852386d0090a0d65.png",
     "static/media/mancity-back-small.png": "/footballshirt/static/media/mancity-back-small.b569c00808a53a41c327.png",
     "index.html": "/footballshirt/index.html",
-    "main.b0335b06.css.map": "/footballshirt/static/css/main.b0335b06.css.map",
-    "main.2d3a72a9.js.map": "/footballshirt/static/js/main.2d3a72a9.js.map"
+    "main.49b1fa56.css.map": "/footballshirt/static/css/main.49b1fa56.css.map",
+    "main.d7eefda9.js.map": "/footballshirt/static/js/main.d7eefda9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0335b06.css",
-    "static/js/main.2d3a72a9.js"
+    "static/css/main.49b1fa56.css",
+    "static/js/main.d7eefda9.js"
   ]
 }
