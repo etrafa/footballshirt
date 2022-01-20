@@ -1,10 +1,15 @@
 .checkout {
   color: #4b4b4b;
-  margin-top: 5rem;
+  border-radius: 5px;
+  margin: 2rem auto;
   text-align: center;
   background: #d6d6d6;
   padding-bottom: 1rem;
   display: block;
+  width: 95%;
+  height: 400px;
+  overflow-x: scroll;
+  position: relative;
 }
 
 .checkout button {
@@ -53,4 +58,21 @@
 
 .checkout-active {
   display: none;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-header h2 {
+  margin-left: 2rem;
+}
+.checkout img {
+  max-width: 14%;
+  height: auto;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  position: sticky;
 }

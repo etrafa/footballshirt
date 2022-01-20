@@ -8,6 +8,7 @@ import liverpoolFront from "./liverpool-asset/liverpool-front.png";
 import liverpoolBack from "./liverpool-asset/liverpool-back.png";
 import liverpoolFrontSmall from "./liverpool-asset/liverpool-front-small.png";
 import liverpoolBackSmall from "./liverpool-asset/liverpool-back-small.png";
+import closeImage from "./asset/close.png";
 
 const LiverpoolSales = () => {
   const [checkout, setCheckout] = useState(false);
@@ -19,6 +20,10 @@ const LiverpoolSales = () => {
   const [price, setPrice] = useState(50);
   const handleWishColor = () => {
     setWishColor(!wishColor);
+  };
+
+  const closeCheckout = () => {
+    setCheckout(!checkout);
   };
 
   const buyHandler = (e) => {
@@ -147,7 +152,10 @@ const LiverpoolSales = () => {
 
       <div id="checkout-section">
         <div className={checkout ? "checkout" : "checkout-active"}>
-          <h2>Product Details</h2>
+          <div className="checkout-header">
+            <h2>Product Details</h2>
+            <img onClick={closeCheckout} src={closeImage} alt="" />
+          </div>
           <div className="product-details">
             <label htmlFor="productSize">Size</label>
             <input disabled placeholder={tshirtSize} />

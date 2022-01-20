@@ -1,27 +1,37 @@
 import "./ShirtSales.css";
+import "../checkout.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
 import manUnitedFront from "./manunited-asset/manunited-front.png";
 import manUnitedBack from "./manunited-asset/manunited-back.png";
 import manUnitedFrontSmall from "./manunited-asset/manunited-front-small.png";
 import manUnitedBackSmall from "./manunited-asset/manunited-back-small.png";
+import closeImage from "./asset/close.png";
 
 const ManUnitedSales = () => {
+  const [checkout, setCheckout] = useState(false);
   const [image, setImage] = useState(manUnitedFront);
-  const [cartText, setCartText] = useState("Add to Cart");
   const [wishColor, setWishColor] = useState(true);
-  const [tshirtSize, setTshirtSize] = useState(" ");
+  const [tshirtSize, setTshirtSize] = useState("-");
   const [tshirtName, setTshirtName] = useState("");
   const [tshirtNumber, setTshirtNumber] = useState("");
+  const [price, setPrice] = useState(50);
   const handleWishColor = () => {
     setWishColor(!wishColor);
   };
 
-  const addCartHandler = (e) => {
-    setCartText("Added ✓");
+  const closeCheckout = () => {
+    setCheckout(!checkout);
+  };
+
+  const buyHandler = (e) => {
     e.preventDefault();
-    console.log(tshirtSize, tshirtName, tshirtNumber);
+    if (tshirtSize === "-") alert("Please select your size.");
+    else {
+      setCheckout(!checkout);
+    }
   };
 
   return (
@@ -55,12 +65,12 @@ const ManUnitedSales = () => {
       </div>
       <hr className="user__star__hr" />
       <div className="size__chart">
-        <a href="#">
-          <p>Size Chart</p>
-        </a>
-        <a href="#">
-          <p>Have a Question?</p>
-        </a>
+        <p>
+          <Link to={"/size-chart"}>Size Chart</Link>
+        </p>
+        <p>
+          <Link to={"/faq-help"}>Have a Question?</Link>
+        </p>
       </div>
       <hr className="size__chart__hr" />
       <div className="shipping__information">
@@ -86,7 +96,7 @@ const ManUnitedSales = () => {
               name="size"
               id="size"
             >
-              <option value="#" selected>
+              <option value="-" defaultChecked>
                 -- Please Select --
               </option>
               <option value="small">S</option>
@@ -134,11 +144,121 @@ const ManUnitedSales = () => {
             </span>
             <h4 onClick={handleWishColor}>Add To Wishlist</h4>
           </div>
-          <button type="submit" onClick={addCartHandler}>
-            {cartText}
+          <button onClick={buyHandler} type="submit">
+            Buy
           </button>
         </div>
       </form>
+
+      <div id="checkout-section">
+        <div className={checkout ? "checkout" : "checkout-active"}>
+          <div className="checkout-header">
+            <h2>Product Details</h2>
+            <img onClick={closeCheckout} src={closeImage} alt="" />
+          </div>
+          <div className="product-details">
+            <label htmlFor="productSize">Size</label>
+            <input disabled placeholder={tshirtSize} />
+            <label htmlFor="productName">Name on Shirt</label>
+            <input disabled placeholder={tshirtName || "-"} />
+            <label htmlFor="productNumber">Number on Shirt</label>
+            <input disabled placeholder={tshirtNumber || "-"} />
+          </div>
+          <h2>Billing Details</h2>
+          <div class="checkout-name">
+            <label for="name">Full name</label>
+            <input type="text" />
+          </div>
+          <div class="checkout-email">
+            <label for="email">E-mail address</label>
+            <input type="email" placeholder="example@gmail.com" />
+          </div>
+          <div class="checkout-country">
+            <label for="email">Country</label>
+            <select name="" id="">
+              <option value="" disabled selected>
+                Select Country
+              </option>
+              <option value="">United States of America</option>
+              <option value="">Canada</option>
+              <option value="">Belgium</option>
+              <option value="">Netherlands</option>
+              <option value="">Australia</option>
+              <option value="">South Korea</option>
+              <option value="">Germany</option>
+              <option value="">France</option>
+              <option value="">New Zealand</option>
+              <option value="">Japan</option>
+            </select>
+          </div>
+          <div class="checkout-address">
+            <label for="state">Address</label>
+            <input type="text" />
+          </div>
+          <div class="checkout-state">
+            <label for="state">State/County</label>
+            <input type="text" />
+          </div>
+          <div class="checkout-zipcode">
+            <label for="state">Zip/postal code</label>
+            <input type="text" />
+          </div>
+          <h2>Payment Method</h2>
+          <div class="checkout-card">
+            <label for="">Card Number</label>
+            <input
+              type="number"
+              placeholder="1234 5678 9152 2000"
+              maxlength="16"
+            />
+          </div>
+          <div class="checkout-expiration">
+            <label for="">Expiration date</label>
+            <div class="expiration-date-container">
+              <select name="" id="">
+                <option value="" selected disabled>
+                  Month
+                </option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+              </select>
+              <select name="" id="">
+                <option value="" selected disabled>
+                  Year
+                </option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+              </select>
+            </div>
+            <label for="">CVC</label>
+            <input type="text" placeholder="123" maxlength="3" />
+          </div>
+          <button
+            onClick={() => {
+              setPrice("Bought");
+            }}
+            class="checkout-buy"
+          >{`$ ${price}`}</button>
+        </div>
+      </div>
+
       <div className="thirt__description">
         <h1>DESCRIPTION</h1>
         <hr />
@@ -168,5 +288,4 @@ const ManUnitedSales = () => {
     </div>
   );
 };
-
 export default ManUnitedSales;

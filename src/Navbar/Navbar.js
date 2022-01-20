@@ -43,13 +43,20 @@ const Navbar = () => {
             onClick={handleToggle}
             icon={faWindowClose}
           ></FontAwesomeIcon>
-          <a href="">HOME</a>
-          <a href="">NATIONAL TEAM</a>
-          <a href="">PREMIER LEAUGE</a>
-          <a href="">BUNDESLIGA</a>
-          <a href="">LA LIGA</a>
-          <a href="">LIGUE 1</a>
-          <a href="">OTHER CLUBS</a>
+          <Link to={"/footballshirt"}>HOME</Link>
+          <hr />
+          <Link to={"./national-team"}>NATIONAL TEAM</Link>
+          <hr />
+          <Link to={"./premier-leauge"}>PREMIER LEAUGE</Link>
+          <hr />
+          <Link to={"./bundesliga"}>BUNDESLIGA</Link>
+          <hr />
+          <Link to={"./laliga-leauge"}>LA LIGA</Link>
+          <hr />
+          <Link to={"./ligue-one"}>LIGUE 1</Link>
+          <hr />
+          <Link to={"./other-clubs"}>OTHER CLUBS</Link>
+          <hr />
         </div>
         <FontAwesomeIcon
           className="hamburgerMenu__icon"

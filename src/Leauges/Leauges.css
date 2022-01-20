@@ -1,0 +1,49 @@
+.sales__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sales__container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.tshirt__names {
+  padding: 1rem;
+}
+
+.best__seller__price {
+  color: #941313;
+  font-weight: bold;
+  text-align: center;
+}
+
+.show__more__button {
+  width: 140px;
+  height: 60px;
+  margin: 2rem -70px 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: #222;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.show__more__button-deactive {
+  display: none;
+}
+
+@media only screen and (min-width: 892px) {
+  .sales__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sales__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

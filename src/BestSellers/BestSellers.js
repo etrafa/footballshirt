@@ -2,6 +2,7 @@ import React from "react";
 import "./bestSellers.css";
 import bestSellersData from "./bestSellersData";
 import "./bestSellers.css";
+import { Link } from "react-router-dom";
 
 const HomePageSales = () => {
   return (
@@ -11,11 +12,11 @@ const HomePageSales = () => {
           const { id, text, image, route } = sales;
           return (
             <div key={id}>
-              <img src={image} alt="" />
-              <div className="bestseller-price-container">
-                <p>{text}</p>
-                <span className="best__seller__price">$ 50.00</span>
-              </div>
+              <Link to={route}>
+                <img src={image} alt="" />
+              </Link>
+              <Link to={route}>{text}</Link>
+              <p className="best__seller__price">$ 50.00</p>
             </div>
           );
         })}
