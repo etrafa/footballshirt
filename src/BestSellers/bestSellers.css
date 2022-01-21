@@ -19,12 +19,13 @@
 .best__seller__price {
   color: #941313;
   font-weight: bold;
-  text-align: center;
   line-height: 2rem;
+  text-align: center;
 }
 
-.bestseller-price-container {
+.tshirt-names {
   text-align: center;
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 892px) {

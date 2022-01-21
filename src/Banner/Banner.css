@@ -14,11 +14,14 @@
   opacity: 0.6;
 }
 
-@media only screen and (min-width: 892px) {
+@media only screen and (min-width: 900px) {
   .banner__container {
     grid-template-columns: 1fr 1fr;
   }
   .banner__container {
     padding: 0 5rem;
+  }
+  .banner__container img {
+    padding: 0 0.5rem;
   }
 }

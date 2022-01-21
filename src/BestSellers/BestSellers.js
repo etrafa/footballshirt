@@ -15,7 +15,9 @@ const HomePageSales = () => {
               <Link to={route}>
                 <img src={image} alt="" />
               </Link>
-              <Link to={route}>{text}</Link>
+              <Link to={route}>
+                <p className="tshirt-names">{text}</p>
+              </Link>
               <p className="best__seller__price">$ 50.00</p>
             </div>
           );

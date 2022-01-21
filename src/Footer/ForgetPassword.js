@@ -12,6 +12,7 @@ const ForgetPassword = () => {
             <label htmlFor="email">Email Address</label>
             <input type="email" />
           </form>
+          <button className="sendButton">Send</button>
         </div>
       </div>
     </>

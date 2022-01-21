@@ -104,6 +104,15 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
+      <div className="navbar-items">
+        <Link to={"/footballshirt"}>HOME</Link>
+        <Link to={"./national-team"}>NATIONAL TEAM</Link>
+        <Link to={"./premier-leauge"}>PREMIER LEAUGE</Link>
+        <Link to={"./bundesliga"}>BUNDESLIGA</Link>
+        <Link to={"./laliga-leauge"}>LA LIGA</Link>
+        <Link to={"./ligue-one"}>LIGUE 1</Link>
+        <Link to={"./other-clubs"}>OTHER CLUBS</Link>
+      </div>
     </>
   );
 };

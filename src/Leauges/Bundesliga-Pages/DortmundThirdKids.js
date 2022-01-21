@@ -34,114 +34,118 @@ const DortmundThirdKids = () => {
 
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={image} alt="" />
-      <div className="mainShirt__small">
-        <img
-          src={dortmundFrontSmall}
-          onClick={() => setImage(dortmundFront)}
-          alt=""
-        />
-      </div>
-      <h1>BORUSSIA DORTMUND THIRD KIDS FOOTBALL KIT 21/22</h1>
-      <hr />
-      <div className="shirtSales__price__container">
-        <p className="shirtSales__price">$50.00</p>
-        <p className="in__stock">In Stock</p>
-      </div>
-      <hr className="price__hr" />
-      <div className="user__star">
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-      </div>
-      <hr className="user__star__hr" />
-      <div className="size__chart">
-        <p>
-          <Link to={"/size-chart"}>Size Chart</Link>
-        </p>
-        <p>
-          <Link to={"/faq-help"}>Have a Question?</Link>
-        </p>
-      </div>
-      <hr className="size__chart__hr" />
-      <div className="shipping__information">
-        <ul>
-          <li>Ship out within 1-3 business days.</li>
-          <li>
-            Shipping Time: DHL/Fedex (5-15 business days) | International mail
-            (10-40 business days)
-          </li>
-        </ul>
-      </div>
-      <form>
-        <div className="tshirtSales__additional__parts">
-          <div className="tshirt__size">
-            <label htmlFor="size">
-              <span>*</span>Size
-            </label>
-            <select
-              onChange={(e) => {
-                setTshirtSize(e.target.value);
-              }}
-              value={tshirtSize}
-              name="size"
-              id="size"
-            >
-              <option value="-" defaultChecked>
-                -- Please Select --
-              </option>
-              <option value="small">S</option>
-              <option value="medium">M</option>
-              <option value="large">L</option>
-              <option value="xLarge">XL</option>
-              <option value="2xLarge">2XL</option>
-            </select>
-          </div>
-          <div className="tshirt__name">
-            <label htmlFor="name">
-              Name<span> +$3.00</span>
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={tshirtName}
-              onChange={(e) => setTshirtName(e.target.value)}
-              id="name"
-            />
-          </div>
-          <div className="tshirt__number">
-            <label htmlFor="name">
-              Number <span>+$3.00</span>
-            </label>
-            <input
-              type="text"
-              name="number"
-              value={tshirtNumber}
-              onChange={(e) => setTshirtNumber(e.target.value)}
-              id="number"
-            />
-          </div>
-          <p>* Required Fields</p>
+      <div className="short-container">
+        <img className="mainShirt__front" src={image} alt="" />
+        <div className="mainShirt__small">
+          <img
+            src={dortmundFrontSmall}
+            onClick={() => setImage(dortmundFront)}
+            alt=""
+          />
         </div>
-        <div className="heart__icon">
-          <div className="add__to__wishlist">
-            <span
-              className={
-                wishColor ? "add__to__wishlist-color" : "add__to__wishlist-red"
-              }
-              onClick={handleWishColor}
-            >
-              <FontAwesomeIcon icon={faHeart} />
-            </span>
-            <h4 onClick={handleWishColor}>Add To Wishlist</h4>
-          </div>
-          <button onClick={buyHandler} type="submit">
-            Buy
-          </button>
+        <h1>BORUSSIA DORTMUND THIRD KIDS FOOTBALL KIT 21/22</h1>
+        <hr />
+        <div className="shirtSales__price__container">
+          <p className="shirtSales__price">$50.00</p>
+          <p className="in__stock">In Stock</p>
         </div>
-      </form>
+        <hr className="price__hr" />
+        <div className="user__star">
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+        <hr className="user__star__hr" />
+        <div className="size__chart">
+          <p>
+            <Link to={"/size-chart"}>Size Chart</Link>
+          </p>
+          <p>
+            <Link to={"/faq-help"}>Have a Question?</Link>
+          </p>
+        </div>
+        <hr className="size__chart__hr" />
+        <div className="shipping__information">
+          <ul>
+            <li>Ship out within 1-3 business days.</li>
+            <li>
+              Shipping Time: DHL/Fedex (5-15 business days) | International mail
+              (10-40 business days)
+            </li>
+          </ul>
+        </div>
+        <form>
+          <div className="tshirtSales__additional__parts">
+            <div className="tshirt__size">
+              <label htmlFor="size">
+                <span>*</span>Size
+              </label>
+              <select
+                onChange={(e) => {
+                  setTshirtSize(e.target.value);
+                }}
+                value={tshirtSize}
+                name="size"
+                id="size"
+              >
+                <option value="-" defaultChecked>
+                  -- Please Select --
+                </option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="xLarge">XL</option>
+                <option value="2xLarge">2XL</option>
+              </select>
+            </div>
+            <div className="tshirt__name">
+              <label htmlFor="name">
+                Name<span> +$3.00</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={tshirtName}
+                onChange={(e) => setTshirtName(e.target.value)}
+                id="name"
+              />
+            </div>
+            <div className="tshirt__number">
+              <label htmlFor="name">
+                Number <span>+$3.00</span>
+              </label>
+              <input
+                type="text"
+                name="number"
+                value={tshirtNumber}
+                onChange={(e) => setTshirtNumber(e.target.value)}
+                id="number"
+              />
+            </div>
+            <p>* Required Fields</p>
+          </div>
+          <div className="heart__icon">
+            <div className="add__to__wishlist">
+              <span
+                className={
+                  wishColor
+                    ? "add__to__wishlist-color"
+                    : "add__to__wishlist-red"
+                }
+                onClick={handleWishColor}
+              >
+                <FontAwesomeIcon icon={faHeart} />
+              </span>
+              <h4 onClick={handleWishColor}>Add To Wishlist</h4>
+            </div>
+            <button onClick={buyHandler} type="submit">
+              Buy
+            </button>
+          </div>
+        </form>
+      </div>
 
       <div id="checkout-section">
         <div className={checkout ? "checkout" : "checkout-active"}>

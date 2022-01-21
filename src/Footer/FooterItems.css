@@ -129,7 +129,8 @@
 }
 
 .createAccount__button,
-.logIn__button {
+.logIn__button,
+.sendButton {
   width: 140px;
   height: 45px;
   margin-top: 1rem;
@@ -139,6 +140,7 @@
   background-color: #fea500;
   color: #fff;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .already__registered {
@@ -149,4 +151,29 @@
   padding-top: 0.8rem;
   text-decoration: none;
   color: #000;
+}
+
+@media screen and (min-width: 900px) {
+  .about__us__container,
+  .delivery__container,
+  .privacy__container,
+  .terms__container,
+  .faqHelp__container,
+  .ship__container,
+  .returnPolicy__container,
+  .payment__container,
+  .registration__container,
+  .already__registered,
+  .forget__password__container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .already__registered {
+    margin-top: 2rem;
+  }
+  .create__account__form {
+    width: 40%;
+    margin: 0 auto;
+  }
 }

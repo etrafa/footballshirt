@@ -12,43 +12,45 @@ const PsgHomeShirt = () => {
 
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={image} alt="" />
-      <div className="mainShirt__small">
-        <img src={psgFrontSmall} onClick={() => setImage(psgFront)} alt="" />
-        <img src={psgBackSmall} onClick={() => setImage(psgBack)} alt="" />
-      </div>
-      <h1>PARIS SAINT-GERMAIN HOME FOOTBALL SHORTS 21/22</h1>
-      <hr />
-      <div className="shirtSales__price__container">
-        <p className="shirtSales__price">$50.00</p>
-        <p className="in__stock">In Stock</p>
-      </div>
-      <hr className="price__hr" />
-      <div className="user__star">
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-      </div>
-      <hr className="user__star__hr" />
-      <div className="size__chart">
-        <a href="#">
-          <p>Size Chart</p>
-        </a>
-        <a href="#">
-          <p>Have a Question?</p>
-        </a>
-      </div>
-      <hr className="size__chart__hr" />
-      <div className="shipping__information">
-        <ul>
-          <li>Ship out within 1-3 business days.</li>
-          <li>
-            Shipping Time: DHL/Fedex (5-15 business days) | International mail
-            (10-40 business days)
-          </li>
-        </ul>
+      <div className="short-container">
+        <img className="mainShirt__front" src={image} alt="" />
+        <div className="mainShirt__small">
+          <img src={psgFrontSmall} onClick={() => setImage(psgFront)} alt="" />
+          <img src={psgBackSmall} onClick={() => setImage(psgBack)} alt="" />
+        </div>
+        <h1>PARIS SAINT-GERMAIN HOME FOOTBALL SHORTS 21/22</h1>
+        <hr />
+        <div className="shirtSales__price__container">
+          <p className="shirtSales__price">$50.00</p>
+          <p className="in__stock">In Stock</p>
+        </div>
+        <hr className="price__hr" />
+        <div className="user__star">
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+        <hr className="user__star__hr" />
+        <div className="size__chart">
+          <a href="#">
+            <p>Size Chart</p>
+          </a>
+          <a href="#">
+            <p>Have a Question?</p>
+          </a>
+        </div>
+        <hr className="size__chart__hr" />
+        <div className="shipping__information">
+          <ul>
+            <li>Ship out within 1-3 business days.</li>
+            <li>
+              Shipping Time: DHL/Fedex (5-15 business days) | International mail
+              (10-40 business days)
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="tshirtSales__additional__parts">
         <div className="tshirt__size">
